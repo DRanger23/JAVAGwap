@@ -23,7 +23,7 @@ public class userServiceimpl2 implements userService{
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 			
-			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/test","root","");
+			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/gwap","root","");
 			
 			stmt = conn.createStatement();
 			
