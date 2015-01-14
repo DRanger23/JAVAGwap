@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>mockup</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+  	<servlet-name>userModify</servlet-name>
+  	<servlet-class>com.mockup.user.userModifyServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>userModify</servlet-name>
+  	<url-pattern>/usermodify</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  	<servlet-name>userRegister</servlet-name>
+  	<servlet-class>com.mockup.user.userRegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>userRegister</servlet-name>
+  	<url-pattern>/userregister</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>userManage</servlet-name>
+  	<servlet-class>com.mockup.user.userManageServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>userManage</servlet-name>
+  	<url-pattern>/usermanage</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>userLogin</servlet-name>
+  	<servlet-class>com.mockup.user.userLoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>userLogin</servlet-name>
+  	<url-pattern>/userlogin</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>shoppingCart</servlet-name>
+  	<servlet-class>com.mockup.shoppingcart.shoppingCartServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>shoppingCart</servlet-name>
+  	<url-pattern>/shoppingcart</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>orderConfirm</servlet-name>
+  	<servlet-class>com.mockup.shoppingcart.orderConfirmServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>orderConfirm</servlet-name>
+  	<url-pattern>/orderconfirm</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>productDetail</servlet-name>
+  	<servlet-class>com.mockup.product.productDetailServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>productDetail</servlet-name>
+  	<url-pattern>/productdetail</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>productList</servlet-name>
+  	<servlet-class>com.mockup.product.productListServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>productList</servlet-name>
+  	<url-pattern>/productlist</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>orderDetail</servlet-name>
+  	<servlet-class>com.mockup.order.orderDetailServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>orderDetail</servlet-name>
+  	<url-pattern>/orderdetail</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  	<servlet-name>orderList</servlet-name>
+  	<servlet-class>com.mockup.order.orderListServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>orderList</servlet-name>
+  	<url-pattern>/orderlist</url-pattern>
+  </servlet-mapping>
+</web-app>
