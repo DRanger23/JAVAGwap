@@ -140,18 +140,19 @@ public class productListServlet extends HttpServlet {
 			product product = it.next();
 		out1.println("			<tr>");
 		out1.println("				<td class=tablebody2 valign=\"middle\" align=\"center\" width=\"8%\">");
-		out1.println("					+ product.getProductid() +");
+		out1.println("					"+ product.getProductid() +"");
 		out1.println("				</td>");
 		out1.println("				");
-		out1.println("    <td class=tablebody1 valign=\"middle\" width=\"60%\"> &nbsp;&nbsp;<a href=\"productdetail\">+ product.getname() +</a> ");
+		out1.println("    <td class=tablebody1 valign=\"middle\" width=\"60%\"> &nbsp;&nbsp;<a href=\"productdetail\">"+ product.getName() +"</a> ");
 		out1.println("    </td>");
 		out1.println("				<td class=tablebody2 valign=\"middle\" align=\"center\" width=\"8%\">");
-		out1.println("					+ product.getBasePrice() +");
+		out1.println("					"+ product.getBasePrice() +"");
 		out1.println("				</td>");
 		out1.println("				");
 		out1.println("    <td class=tablebody1 valign=\"middle\" align=\"center\" width=\"24%\"> <a href=\"shoppingcart\"><img border=\"0\" src=\"images/car_new.gif\" width=\"97\" height=\"18\"></a> ");
 		out1.println("    </td>");
 		out1.println("			</tr>");
+		}
 		out1.println("		</table>");
 		out1.println("<!-- Body End -->");
 		out1.println("<!-- Footer Start -->");
@@ -172,7 +173,7 @@ public class productListServlet extends HttpServlet {
 		out1.println("		</table>");
 		out1.println("<!-- Footer End -->");
 		out1.println("	</body>");
-		out1.println("</html>");}
+		out1.println("</html>");
 	}
 
 	@Override
