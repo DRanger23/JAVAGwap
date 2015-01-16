@@ -51,7 +51,6 @@ public class productListServlet extends HttpServlet {
 	
 	private void toproductList(HttpServletResponse resp, List productList)
 			throws IOException {
-		PrintWriter out = resp.getWriter();
 		resp.setContentType("text/html;charset=utf-8");
 		resp.setCharacterEncoding("UTF-8");
 		PrintWriter out1=resp.getWriter();
@@ -61,7 +60,7 @@ public class productListServlet extends HttpServlet {
 		out1.println("		<title>达内电子商务门户</title>");
 		out1.println("		<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">");
 		out1.println("		<meta name=\"description\" content=\"达内电子商务门户\">");
-		out1.println("		<link href=\"../../css/tarena.css\" rel=stylesheet>");
+		out1.println("		<link href=\"WEB/css/tarena.css\" rel=stylesheet>");
 		out1.println("	</head>");
 		out1.println("	<body topmargin=\"0\" leftmargin=\"0\" rightmargin=\"0\" bottommargin=\"0\">");
 		out1.println("<!-- Header Start -->");
@@ -108,7 +107,7 @@ public class productListServlet extends HttpServlet {
 		out1.println("			<tr>");
 		out1.println("				<td height=\"25\" valign=\"middle\">");
 		out1.println("					<img src=\"images/Forum_nav.gif\" align=\"absmiddle\">");
-		out1.println("					<a href=../../index.jsp>达内电子商务门户</a> →<img border=\"0\" src=\"images/dog.gif\" width=\"19\" height=\"18\">欢迎<font color=\"red\">admin</font>光临！");
+		out1.println("					<a href=\"../../index.jsp\">达内电子商务门户</a> →<img border=\"0\" src=\"images/dog.gif\" width=\"19\" height=\"18\">欢迎光临！");
 		out1.println("				</td>");
 		out1.println("			</tr>");
 		out1.println("		</table>");
@@ -144,6 +143,7 @@ public class productListServlet extends HttpServlet {
 		out1.println("				</td>");
 		out1.println("				");
 		out1.println("    <td class=tablebody1 valign=\"middle\" width=\"60%\"> &nbsp;&nbsp;<a href=\"productdetail\">"+ product.getName() +"</a> ");
+		
 		out1.println("    </td>");
 		out1.println("				<td class=tablebody2 valign=\"middle\" align=\"center\" width=\"8%\">");
 		out1.println("					"+ product.getBasePrice() +"");

@@ -152,11 +152,11 @@ public class userManageServlet extends HttpServlet{
 		out.println("			<tr>");
 		out.println("				<td class=tablebody2 valign=\"middle\" align=\"center\" height=\"25\"  width=\"35%\">");
 		out.println("					");
-		out.println("						<b>+user.getUserid+</b>");
+		out.println("						<b>"+ user.getUserid() +"</b>");
 		out.println("				</td>");
 		out.println("				<td class=tablebody2 valign=\"middle\" align=\"center\" height=\"25\"  width=\"35%\">");
 		out.println("					");
-		out.println("						<b>+user.getPassword+</b>");
+		out.println("						<b>"+ user.getPassword() +"</b>");
 		out.println("				</td>");
 		out.println("				<td class=tablebody2 valign=\"middle\" align=\"center\" height=\"25\"  width=\"35%\">");
 		out.println("					");
